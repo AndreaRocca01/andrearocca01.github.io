@@ -1,0 +1,127 @@
+/* Custom styles for Andrea Rocca's portfolio */
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #667eea;
+  --accent-color: #764ba2;
+  --light-bg: #f8f9fa;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Welcome hero section */
+.welcome-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(100px, -100px);
+}
+
+/* Section headings */
+h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Alerts */
+.alert-info {
+  background-color: #e0f2fe;
+  border-color: #0284c7;
+  color: #0c4a6e;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-hero {
+    padding: 2rem 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+/* Text utilities */
+.text-justify {
+  text-align: justify;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+/* Smooth transitions */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color) !important;
+}
